@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        #nav1{
+            display: flex;
+            width: auto;
+            justify-content: space-around;
+            cursor: pointer;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        #nav1>div{
+        display: flex;
+        width:40% ;
+        align-items: center;
+        
+        }
+        
+       #nav1>div~div{
+          padding-left: 100px;
+          justify-content: space-around;
+          width: 20%;
+       }
+
+       #nav1>div~div>img{
+             border-radius: 100%;
+             width: 30px;
+             height: 30px;
+            
+            
+       }
+
+      #languageID{
+        font-size: 100%;
+        border: none;
+        cursor: pointer;
+      }
+
+
+       #nav1>div>i{
+            color: gold;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+      /* 2nd nav bar  */
+
+       #nav2{
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        padding: 20px;
+        background-color: black;
+       }
+
+       #nav2>div{
+        width: 10%;
+        display: flex;
+        margin-left: 52px;
+        cursor: pointer;
+       }
+
+       #nav2>div+div{
+        width: 60%;
+        color: white;
+        border: 1px solid black;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        
+       }
+       #nav2>div+div>h3:hover{
+        color: gold;
+       }
+       #nav2>div+div>button{
+        width: 20%;
+        height:100%;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: none;
+       }
+       #nav2>div+div>button>i{
+        color: rgb(228, 197, 16);
+       }
+
+       /* main page 1 */
+
+       #container1{
+        position: relative;
+             border: 1px solid red;
+       }
+       #container1>img{
+        width: 100%;
+       }
+       #container1>h4{
+        position: absolute;
+        color: gold;
+        top: 30%;
+        left: 50%;
+        font-weight:10px;
+       }
+
+    </style>
+</head>
+<body>
+    <nav id="nav1">
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p> 96 Ernser Vista Suite 437, NY, US</p>
+            <i class="fa-solid fa-phone"></i>
+            <p>(123) 456-78-910</p>
+        </div>
+        <div>
+            <p>Login</p>
+            <p>|</p>
+            <p>Register</p>
+            <img src="https://preview.colorlib.com/theme/hiroto/img/lan.png" alt="langLogo">
+            <label for="language">
+               <select name="language" id="languageID">
+                <option value="eng">English</option>
+                <option value="ban">Bangla</option>
+               </select>
+            </label>
+
+        </div>
+    </nav>
+
+   <nav id="nav2">
+         <div>
+            <img src="https://preview.colorlib.com/theme/hiroto/img/logo.png" alt="companyLogo">
+         </div>
+         <div>
+            <h3>Home</h3>
+            <h3>Rooms</h3>
+            <h3>AboutUs</h3>
+            <h3>Pages</h3>
+            <h3>News</h3>
+            <h3>Contact</h3>
+            <button>Book Now <i class="fa-solid fa-arrow-right"></i> </button>
+         </div>
+   </nav>
+
+<!-- Main page 1 -->
+
+<div id="container1">
+   <img src="https://preview.colorlib.com/theme/hiroto/img/hero.jpg.webp" alt="">
+   <h4>WELCOME   HIROTO</h4>
+</div>
+
+</body>
+</html>
