@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+    <style>
+        h1{
+            color: teal;
+            text-align: center;
+            margin: 20px;
+        }
+        #container{
+            width: 20%;
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,50px);
+            gap: 20px;
+            margin: auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        #container>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        #res{
+            grid-column: 1 /span 4;
+        }
+        .c{
+            background-color: red;
+            color: white;
+        }
+        .black{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+        <div id="res"></div>
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div class="black">+</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+       <div class="black">-</div>
+       <div>7</div>
+       <div>8</div>
+       <div>9</div>
+       <div class="black">x</div>
+       <div class="c">C</div>
+       <div>0</div>
+       <div class="black">=</div>
+       <div class="black">/</div>
+    </div>
+</body>
+</html>
