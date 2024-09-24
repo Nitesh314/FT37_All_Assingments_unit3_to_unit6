@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nevbar</title>
+    <style>
+        #navbar{
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+           
+        }
+        #navbar>div+div{
+            display: flex;
+            width: 60%;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            
+           
+        }
+       
+       
+        img{
+            width: 50%;
+        }
+        button{
+            padding: 20px;
+            border-radius: 5px;
+            border-color: red;
+            color: red;
+
+        }
+        select{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div>
+            <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="logo">
+        </div>
+        <div>
+             <select name="select" id="">
+                <option value="">COURSES</option>
+             </select>
+             <h4>FEES & ISA</h4>
+             <h4>ABOUT US</h4>
+             <h4>HIRE FROM US</h4>
+             <h4>FAQ</h4>
+             <h4>EVENTS</h4>
+             <button>LOGIN</button>
+
+        </div>
+    </nav>
+</body>
+</html>
