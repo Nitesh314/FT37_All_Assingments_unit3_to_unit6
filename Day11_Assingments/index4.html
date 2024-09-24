@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #container{
+            border: 2px solid ;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(29,34,86);
+        }
+        #container div{
+            width: 35%;
+            padding: 10px 10px 10px 30px;
+           background-color: rgb(29,34,86);
+        }
+
+        #container>div+div{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: rgb(29,34,86);
+        }
+        img{
+            width: 50%;
+        }
+        select{
+           border: none;
+           font-weight: bold;
+           background-color:rgb(29,34,86);
+           color: white;
+        }
+
+        button{
+           margin: 0px 20px 0px 0px;
+           padding: 0px 20px 0px 20px;
+           background-color: blue;
+           color: white;
+           border:none;
+           border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://cdn.prod.website-files.com/62e8d2ea218fb7676b6892a6/63a9a311ecd826aa5be44d4e_NS%20Logo%20primary%20white-p-500.png" alt="logo">
+        </div>
+        <div>
+            <h4>Data Science & AI </h4>
+            <h4>B.Tech In CS & AI</h4>
+            <h4>Newton Edge</h4>
+            <h4>Refer & Earn</h4>
+            <select>
+                <option value="More">More</option>
+            </select>
+            <button>Sign up</button>
+        </div>
+    </div>
+</body>
+</html>
