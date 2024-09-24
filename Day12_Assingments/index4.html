@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #container{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,200px);
+            margin: auto;
+            gap: 20px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+         }
+         #container>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         }
+
+         #container>div:nth-child(1){
+            background-color: red;
+         }
+        
+         #container>div:nth-child(2){
+            background-color:blue;
+         }
+
+         #container>div:nth-child(3){
+            background-color: gray;
+         }
+
+         #container>div:nth-child(4){
+            background-color: green;
+         }
+
+         #container>div:nth-child(5){
+            background-color: gold;
+         }
+
+         #container>div:nth-child(6){
+            background-color:pink;
+         }
+
+         #container>div:nth-child(7){
+            background-color: orange;
+         }
+
+         #container>div:nth-child(8){
+            background-color: skyblue;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
